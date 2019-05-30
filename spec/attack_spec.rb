@@ -97,9 +97,8 @@ describe Attack do
 
     attack = Attack.new
     user = User.new(equipments: equipments, life: 50_000)
-    enemy = Enemy.new(life: 50_000)
 
-    attack.attack(user, enemy).each do |damage_instance|
+    attack.attack(user).each do |damage_instance|
       expect(damage_instance.damage).to eq damage
       expect(damage_instance.recoil).to eq recoil
     end

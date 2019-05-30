@@ -4,4 +4,5 @@ source 'https://rubygems.org' do
   gem 'rspec', require: false
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
+  gem 'rubycritic', require: false
 end
